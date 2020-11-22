@@ -16,6 +16,8 @@ tiny_mybatis是为了学习mybatis源码的而开发的，可以认为是一个�
 2、引入一级缓存
 ### 使用端 
     相关SQL见tiny_mybatis.sql
+    </br>
+    相关配置见src/test/resources/sqlMapConfig.xml、src/test/resources/UserMapper.xml
     
     @Test
     public void testSelect() throws Exception {
