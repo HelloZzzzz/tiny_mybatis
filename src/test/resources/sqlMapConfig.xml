@@ -1,0 +1,13 @@
+<configuration>
+    <properties>
+        <property name="jdbc.driver" value="com.mysql.jdbc.Driver"/>
+        <property name="jdbc.url" value="jdbc:mysql://localhost:3306/tiny_mybatis"/>
+        <property name="jdbc.username" value="root"/>
+        <property name="jdbc.password" value="123321"/>
+    </properties>
+
+
+    <mappers>
+        <mapper resource="UserMapper.xml"/>
+    </mappers>
+</configuration>

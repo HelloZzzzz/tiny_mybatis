@@ -1,0 +1,25 @@
+<mapper namespace="com.lzb.dao.UserDao">
+    <select id="findByCondition" paramterType="com.lzb.bean.User" resultType="com.lzb.bean.User">
+        select * from user where username =#{username}
+    </select>
+
+    <select id="findAll" resultType="com.lzb.bean.User">
+        select * from user
+    </select>
+
+
+    <update id="updatePasswordById" paramterType="com.lzb.bean.User" resultType="java.lang.Integer">
+        update user set password = #{password} where id = #{id}
+    </update>
+
+
+    <insert id="insertUser" paramterType="com.lzb.bean.User" resultType="java.lang.Integer">
+        insert into user(username, password, birthday) values(#{username}, #{password}, #{birthday})
+    </insert>
+
+    <insert id="deleteUser" paramterType="com.lzb.bean.User" resultType="java.lang.Integer">
+        delete from user where id = #{id}
+    </insert>
+
+
+</mapper>
